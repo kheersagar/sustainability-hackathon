@@ -118,7 +118,34 @@ function Rotuine() {
     {
       id:3,
       name:'Commuting',
-      imgSrc : 'https://static.vecteezy.com/system/resources/thumbnails/001/892/479/small/social-distancing-with-woman-wearing-medical-mask-in-bus-station-city-community-transport-with-diverse-commuters-together-prevention-coronavirus-covid-19-free-vector.jpg'
+      imgSrc : 'https://static.vecteezy.com/system/resources/thumbnails/001/892/479/small/social-distancing-with-woman-wearing-medical-mask-in-bus-station-city-community-transport-with-diverse-commuters-together-prevention-coronavirus-covid-19-free-vector.jpg',
+      questions:{
+        question : 'How do you planning to commute to work/school today?',
+        options:[
+          {
+            option:'. Personal vehicle (car, motorcycle, etc.)',
+            questions : {
+              question : "Do you carpool or share your ride with others?",
+              options :[
+                {
+                  option: "Yes",
+                  suggestion: "Carpooling or sharing rides with others reduces the number of vehicles on the road, promoting sustainability."
+                },
+                {
+                  option: "No",
+                  suggestion: "Consider carpooling options to reduce traffic congestion and reduce carbon emissions"
+                },
+              ]
+            }
+          },
+          {
+            option:'Public transportation (bus, train, etc.)',
+          },
+          {
+            option:'Bicycle/Walking',
+          },
+        ]
+      }
     },
     {
       id:4,

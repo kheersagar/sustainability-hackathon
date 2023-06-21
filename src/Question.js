@@ -14,6 +14,7 @@ function Question() {
                 <input
                   type="radio"
                   name="answer"
+                  id={item.option}
                   value={item.option}
                   onChange={(e)=>{
                     console.log(e.target)
@@ -23,19 +24,19 @@ function Question() {
                 />
                 {location.pathname.includes("/question/") ? (
                   <>
-                    <label className="text-gray-700 dark:text-gray-400 text-lg ml-4">
+                    <label htmlFor={item.option} className="text-gray-700 dark:text-gray-400 text-lg ml-4">
                       {item.option}
                     </label>
                   </>
                 ) : (
                   <NavLink to="/question/1" state={{ data: item }}>
-                    <label className="text-gray-700 dark:text-gray-400 text-lg ml-4">
+                    <label  htmlFor={item.option}  className="text-gray-700 dark:text-gray-400 text-lg ml-4">
                       {item.option}
                     </label>
                   </NavLink>
                 )}
               </div>
-              {isSelected && 
+              {location.pathname.includes("/question/") && isSelected && 
               <div className="bg-slate-200 w-full h-52 flex justify-center items-center mb-6 p-4 sm:p-0">
                 <h1 className="text-lg font-semibold">{item.suggestion}</h1>
               </div>
