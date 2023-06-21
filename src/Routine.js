@@ -6,7 +6,7 @@ function Rotuine() {
     {
       id:1,
       name:'Bathing',
-      imgSrc : 'https://thumbs.dreamstime.com/b/vector-illustration-kid-bathing-eps-112206383.jpg',
+      imgSrc : 'https://png.pngtree.com/element_our/png_detail/20180921/kids-shower-png_105670.jpg',
       questions:{
         question : 'How do you planning to bathe today?',
         options:[
@@ -45,7 +45,7 @@ function Rotuine() {
                 },
                 {
                   option: "10-15 minutes",
-                  suggestion: "Using more than one bucket of water for bathing can be excessive. Consider reducing the amount of water used to conserve resources."
+                  suggestion: "Try to shorten your shower time to save water and energy"
                 },
                 {
                   option: "More than 15 minutes",
@@ -91,25 +91,8 @@ function Rotuine() {
           {
             option:'Reusable bags',
             questions : {
-              question : 'How long do you typically spend in the shower?',
-              options :[
-                {
-                  option: "Less than 5 minutes",
-                  suggestion: "Great job! Taking short showers helps conserve water."
-                },
-                {
-                  option: "5-10 minutes",
-                  suggestion: "That's good! Consider reducing your shower time to further conserve water."
-                },
-                {
-                  option: "10-15 minutes",
-                  suggestion: "Using more than one bucket of water for bathing can be excessive. Consider reducing the amount of water used to conserve resources."
-                },
-                {
-                  option: "More than 15 minutes",
-                  suggestion: "Taking long showers can be wasteful. Aim to reduce your shower time for better sustainability."
-                },
-              ]
+              question : 'Continue using reusable bags for grocery shopping. This is sustainable option',
+              options :[ ]
             }
           },
         ]
@@ -123,7 +106,7 @@ function Rotuine() {
         question : 'How do you planning to commute to work/school today?',
         options:[
           {
-            option:'. Personal vehicle (car, motorcycle, etc.)',
+            option:'Personal vehicle (car, motorcycle, etc.)',
             questions : {
               question : "Do you carpool or share your ride with others?",
               options :[
@@ -140,9 +123,17 @@ function Rotuine() {
           },
           {
             option:'Public transportation (bus, train, etc.)',
+            questions : {
+              question : 'Continue using Public transportation. This is sustainable option',
+              options :[ ]
+            }
           },
           {
             option:'Bicycle/Walking',
+            questions : {
+              question : 'Continue using Bicycle/Walking. This is sustainable option',
+              options :[ ]
+            }
           },
         ]
       }
